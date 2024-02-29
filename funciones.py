@@ -25,7 +25,7 @@ class Cliente(Persona):
         print("Deposito aceptado")
 
     def retirar(self, retiro):
-        if self.saldo <= retiro:
+        if self.saldo >= retiro:
             self.saldo -= retiro
             print("Retiro exitoso")
         else:
